@@ -5,8 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- CSS only --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/fd20f942bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="asstes/css/style.css">
 </head>
 <body>
+    <section id="Inicio">
+    <!-- seccion de barra-->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                        <img src="asstes/img/log 111.1.png" alt="Bootstrap" width="15%" height="22%"> 
+                        <img src="asstes/img/log.png" alt="Bootstrap" width="55%" height="25%">
+            </a>
+        <ul class="list-group list-group-horizontal">
+                <li class="list-group-item"> <a href="https://mail.google.com" target="_blank"> <i class="fa-solid fa-envelope fa-2x " ></i></a></li>
+                <li class="list-group-item"> <a href="https://github.com" target="_blank"> <i class="fa-brands fa-github fa-2x" ></i></a></li>
+                <li class="list-group-item"><a href="https://web.whatsapp.com" target="_blank"> <i class="fa-brands fa-whatsapp fa-2x"></i></a></li>
+              <!-- Button trigger modal -->
+                <li class="list-group-item"> 
+                    <i class="fa-solid fa-user fa-2x text-secondary-emphasis" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        
+                        </i>
+                    </li>
+            </ul>
+         
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesion</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div> 
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Acceder</button>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+    <!-- seccion de inicio-->
+
+       <div class="presentacion">
+        <p class="bienvenida"> Bienvenidos <br> Soy Lucia Aldana Lescano <span>Full Stack
+            Developer Jr.</span></p>
+       
+    </div>
+  
+</section>
+          <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="asstes/img/perfil.png" alt="perfil">
+        </div>
+        <div class="sobre mi">
+            <p class="titulo-seccion"><h2>Sobre Mi</h2></p>
+            <h2>Hola, Soy Lucia Aldana Lescano </h2>
+            <h4>Full Stack Developer Jr.</h4>
+            <p>Soy de Buenos Aires (Argentina). Estudio la Licenciatura en Fisica en la Universidad Nacional de Mar del Plata.</p>
+        </div>
+    </section>
+<!-- SECCION Educacion -->
+<section id="Educacion">
+    <h3 class="titulo-seccion">Educación</h3>
+    <div class="fila">
+        <div class="Educacion">
+            <h4>Secundaria</h4>
+            <hr>
+            <p>Escuela De Educación Secundaria Nº2 "Teniente Félix Origone" <br> <br> 2014-2019 </p>
+        </div>
+        <div class="Educacion">
+
+            <h4>Curso de Programacion Basica </h4>
+            <hr>
+            <p>Escuela De Educación Secundaria Nº22 "Mariano Moreno" <br><br> 2017-2019</p>
+                <li>Html</li>
+                <li>Css</li>
+                <li>JavaScript</li>
+                <li>Photoshop</li>
+        
+        </div>
+        <div class="Educacion">
+            <h4>Universidad</h4>
+            <hr>
+            <p>Universidad Nacional de Mar del Plata <br> Licenciatura en Fisica <br><br> 2020- en curso </p>
+        </div>
+    </div>
     
+</section>
+<!-- SECCION H A B I L I D A D E S -->
+<div class="contenedor-skills" id="skills">
+    <h3>HABILIDADES </h3>
+    <div class="skill">
+        <div class="info">
+            <p> Html</p>
+            <span class="porcentaje">65%</span>
+        </div>
+        <div class="barra">
+            <div class="progreso1" id="html"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="info">
+            <p> Css</p>
+            <span class="porcentaje">55%</span>
+        </div>
+
+        <div class="barra">
+            <div class="progreso2" id="Css"></div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="info">
+            <p>JavaScript</p>
+            <span class="porcentaje">50%</span>
+        </div>
+
+        <div class="barra">
+            <div class="progreso3" id="js"></div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- SECCION FOOTER -->
+<footer>
+   
+    <div class="copyright" >
+        <i class="fa-solid fa-copyright"></i><h6>Todos los derechos reservados - 2022</h6>
+    </div>
+</footer>
+
+          
+         <!-- JavaScript Bundle with Popper-->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
